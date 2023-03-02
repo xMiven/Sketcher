@@ -14,10 +14,18 @@
     </div>
     <div class="hero">
       <div class="options">
-        <p class="info">Info goes here</p>
-        <p>Options go here</p>
+        <p id="sliderInfo">Choose grid size:</p>
+        <div class="sliderContainer">
+          <input type="range" id="slider" min="10" max="50" value="10" />
+        </div>
+        <label for="unicorn"
+          >Unicorn mode? <input type="checkbox" name="unicorn" id="unicorn" />
+        </label>
+        <label for="reset"
+          >Reset <button type="reset" id="reset">Reset</button>
+        </label>
       </div>
-      <div class="grid">Grid goes here</div>
+      <div id="grid"></div>
     </div>
     <div class="footer">
       <p>Miven was here</p>
