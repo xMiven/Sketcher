@@ -56,6 +56,15 @@ function setBoxStyle(value) {
           Math.random() * 16777215
         ).toString(16)}`;
       }
+      j.onclick = (e) => {
+        if (!unicornMode.checked) {
+          e.target.style.backgroundColor = "white";
+        } else {
+          e.target.style.backgroundColor = `#${Math.floor(
+            Math.random() * 16777215
+          ).toString(16)}`;
+        }
+      };
     };
   }
 }
